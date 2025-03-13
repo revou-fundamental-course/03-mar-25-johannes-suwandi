@@ -31,25 +31,50 @@ nav>a {
     height: 500px;
 }
 
-.our-profile-content {
-    border: 1px solid;
-    height: 500px;
-    align-content: center;
-    text-align: center;
+/* For future styling */
+.my-profile-content {
 }
 
-.achievement-content {
+/* .my-profile-content img {
+    border: 1px solid;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+} */
+
+/* .portfolio-content {
     border: 1px solid;
     height: 500px;
     align-content: center;
     text-align: center;
+} */
+
+.portfolio-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
-.message-us-content {
-    border: 1px solid;
-    height: 500px;
-    align-content: center;
-    text-align: center;
+.message-me-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.message-me-form, .message-me-output {
+    width: 75%;
+    border: 1px solid black;
+    margin: 10px;
+    padding: 15px;
+}
+
+.message-me-form input[type="text"] {
+    width: 70%;
+}
+
+.message-me-form textarea {
+    width: 90%;
+    padding: 5px;
 }
 
 footer {
