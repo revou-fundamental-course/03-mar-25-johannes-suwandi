@@ -91,19 +91,18 @@
 
         <!-- Portfolio Header -->
         <section id="portfolio">
-        <header>
-            <h1>My Portfolio</h1>
-        </header>
+            <header>
+                <h1>My Portfolio</h1>
+            </header>
 
-        <!-- Portfolio Content -->
-        <div class="portfolio-content">
-            <div class="portfolio-item">
+            <!-- Portfolio Content -->
+            <div class="portfolio-content">
                 <h2>Walmart</h2>
-                <h4>Sales Performance Review and Forecast for Year 2012-2013</h4>
+                <h3>Sales Performance Review and Forecast for Year 2012-2013</h3>
                 <p>Walmart is the largest retailer in the world and still growing, with 10,623 stores and 380 distribution facilities in 27 countries by January 2023.</p>
                 <p>This is a project to review past performance and forecast the future sales trend for the next 12 months based on the dataset from Feb, 2nd 2010 - July, 26th 2013.</p>
+            
             </div>
-        </div>
         </section>
         
         <hr />
@@ -122,7 +121,7 @@
                     <h2>Leave me a message</h2>
                     <form id="messageForm">
                         <label>Name :
-                            <input type="text" id="name" required>
+                            <input type="text" id="name" placeholder="Your name" required>
                         </label>
                         <br><br>
                         <label>Date of birth :
@@ -137,9 +136,9 @@
                         <br><br>
                         <label>Message :
                             <br>
-                            <textarea id="message" required></textarea><br><br>
+                            <textarea id="message" placeholder="Write your message here"></textarea><br><br>
                         </label>    
-                        <button type="button" onclick="displayMessage()">Submit</button>
+                        <button type="button" onclick="validateForm(), displayMessage()">Submit</button>
                     </form>
                 </div>
 

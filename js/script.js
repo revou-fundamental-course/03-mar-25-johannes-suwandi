@@ -19,8 +19,33 @@ function showSlides() {
   setTimeout(showSlides, 3000); // Change image every 2 seconds
 }
 
+// Form validation
+function validateForm() {
+    let name = document.getElementById("name").value;
+    let dob = document.getElementById("dob").value;
+    let gender = document.querySelector('input[name="gender"]:checked');
+    let message = document.getElementById("message").value;
+    
+    if (name == "") {
+        alert("Name must be filled out");
+        return false;
+    }
+    if (dob == "") {
+        alert("Date of birth must be filled out");
+        return false;
+    }
+    if (gender == null) {
+        alert("Gender must be selected");
+        return false;
+    }
+    if (message == "") {
+        alert("Message must be filled out");
+        return false;
+    }
+    return true;    
+}
 
-// Message me section
+// Display message
 function displayMessage() {
     document.getElementById("currentTime").innerText = new Date().toString();
     document.getElementById("outName").innerText = document.getElementById("name").value;

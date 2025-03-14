@@ -86,25 +86,21 @@ nav>a {
   }
 
 /* For future styling */
-/* .my-profile-content {
+.my-profile-content {
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
-.my-profile-content img {
+/* .my-profile-content img {
     border: 1px solid;
     height: 200px;
     width: 200px;
     border-radius: 50%;
 } */
 
-/* .portfolio-content {
-    border: 1px solid;
-    height: 500px;
-    align-content: center;
-    text-align: center;
-} */
-
 .portfolio-content{
-    display: flex;
+    border: 1px solid;
+    padding: 10px;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
