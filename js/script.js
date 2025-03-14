@@ -29,20 +29,19 @@ function validateForm() {
     if (name == "") {
         alert("Name must be filled out");
         return false;
-    }
-    if (dob == "") {
+    }else if (dob == "") {
         alert("Date of birth must be filled out");
         return false;
-    }
+    }else
     if (gender == null) {
         alert("Gender must be selected");
         return false;
-    }
+    }else
     if (message == "") {
         alert("Message must be filled out");
         return false;
-    }
-    return true;    
+    }else 
+    return displayMessage();    
 }
 
 // Display message

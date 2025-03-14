@@ -12,7 +12,7 @@
         <link rel="stylesheet" href="css/style.css">
 
         <!-- Body Header -->
-        <header class="main-header">
+        <header id="main-header" class="main-header">
 
         <!-- Logo Website -->
         <div class="main-logo"></div>
@@ -138,12 +138,13 @@
                             <br>
                             <textarea id="message" placeholder="Write your message here"></textarea><br><br>
                         </label>    
-                        <button type="button" onclick="validateForm(), displayMessage()">Submit</button>
+                        <button type="button" onclick="validateForm()">Submit</button>
                     </form>
                 </div>
 
                 <!-- Form Output -->
                 <div class="message-me-output" id="outputBox">
+                    <h2>Your message</h2>
                     <p><strong>Current time :</strong> <span id="currentTime"></span></p>
                     <p><strong>Name :</strong> <span id="outName"></span></p>
                     <p><strong>Date of birth :</strong> <span id="outDob"></span></p>
@@ -151,11 +152,15 @@
                     <p><strong>Message :</strong> <span id="outMessage"></span></p>
                 </div>
             </div>
+            <div class="back-to-top">
+                <a href="#main-header">Back to top</a>
+            </div>
         </section>
 
         <!-- JavaScript -->
         <script src="js/script.js"></script>
     </main>
+    <hr />
 
     <!-- Main Footer -->
     <footer>
